@@ -1,0 +1,9 @@
+<div class="container">
+  <app-formulario-tarea></app-formulario-tarea>
+  <hr>
+  @for (item of todo; track $index) {
+    <app-lista-tareas [task]="item"></app-lista-tareas>
+  }
+</div>
+
+<router-outlet></router-outlet>
